@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:burlywood;
+}
+
+.to-do {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px; /* Add spacing between the heading and content */
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60%; /* Occupy 60% of the available width */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: auto; /* Adjusts to content */
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    width: 30%; /* Occupy 30% of the available width */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+form input {
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    height: 45px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkred;
+}
+
+.remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: darkred;
+}
